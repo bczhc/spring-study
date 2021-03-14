@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
  */
 public class HelloWorld {
     @Autowired
-    private String msg = "a";
+    String s;
 
     public HelloWorld() {
         System.out.println("constructing...");
@@ -18,10 +18,10 @@ public class HelloWorld {
         System.out.println("constructing with parameter...");
     }
     public void printHelloWorld() {
-        System.out.println(msg);
+        System.out.println(s);
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setS(String s) {
+        this.s = s;
     }
 }
